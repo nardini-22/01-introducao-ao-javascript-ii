@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <title>Calculadora JavaScript</title>
+    <script src="https://kit.fontawesome.com/b103a710d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class=top-bar>
+            <span class="page-title">Calculadora</span>
+            <button onclick="showHistory()" type="button" id="historyBtn">
+                <i class="fas fa-history"></i>
+            </button>
+            </div>
+            <div class="calculadora">
+                <input type="text" id="visor2" readonly></input>
+                <input type="text" id="visor" readonly placeholder="0"></input>
+            </div>
+            <div class="calculadora-buttons">
+                <button onclick="clearVisor()" type="button" id="CE" class="otherBtn" data-value="CE">CE</button>
+                <button onclick="clearAll()" type="button" class="otherBtn" id="C" data-value="C">C</button>
+                <button onclick="deleteNumber()" type="button" id="del" class="otherBtn" data-value="del">
+                    <i class="fas fa-backspace"></i>
+                </button>
+                <button onclick="setOperation('/')" type="button" id="divis" class="btnOperations"
+                    data-value="/">
+                    <i class="fas fa-divide"></i>
+                </button>
+
+                <button onclick="showNumber('7')" type="button" id="seven" class="btnNumbers" data-value="7">7</button>
+                <button onclick="showNumber('8')" type="button" id="eight" class="btnNumbers" data-value="8">8</button>
+                <button onclick="showNumber('9')" type="button" id="nine" class="btnNumbers" data-value="9">9</button>
+                <button onclick="setOperation('*')" type="button" id="mult" class="btnOperations"
+                    data-value="*">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <button onclick="showNumber('4')" type="button" id="four" class="btnNumbers" data-value="4">4</button>
+                <button onclick="showNumber('5')" type="button" id="five" class="btnNumbers" data-value="5">5</button>
+                <button onclick="showNumber('6')" type="button" id="six" class="btnNumbers" data-value="6">6</button>
+                <button onclick="setOperation('-')" type="button" id="minus" class="btnOperations"
+                    data-value="-">
+                    <i class="fas fa-minus"></i>
+                </button>
+
+                <button onclick="showNumber('1')" type="button" id="one" class="btnNumbers" data-value="1">1</button>
+                <button onclick="showNumber('2')" type="button" id="two" class="btnNumbers" data-value="2">2</button>
+                <button onclick="showNumber('3')" type="button" id="three" class="btnNumbers" data-value="3">3</button>
+                <button onclick="setOperation('+')" type="button" id="plus" class="btnOperations"
+                    data-value="+">
+                    <i class="fas fa-plus"></i>
+                </button>
+
+                <button onclick="showNumber('0')" id="zero" type="button" class="btnNumbers" data-value="0">0</button>
+                <button onclick="decimal('.')" id="decimal" type="button" class="btnNumbers" data-value=".">
+                    <img src="../assets/comma-icon.png" alt="comma-icon">
+                </button>
+                <button onclick="calculate()" id="equals" type="button" class="btnOperations" id="equals"
+                    data-value="=">
+                    <i class="fas fa-equals"></i>
+                </button>
+            </div>
+            <div id="history">
+                <h3>Histórico</h3>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
