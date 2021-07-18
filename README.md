@@ -1,5 +1,7 @@
 # 01-introducao-ao-javascript-ii
 
+**Project overview:**
+
 * O objetivo do projeto era desenvolver uma calculadora usando JavaScript, HTML e CSS;
 * O projeto apresenta a maior parte das funcionalidades da calculadora do Windows 10;
 * A UI se assemelha a UI da calculadora do Windows 10;
